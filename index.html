@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container"><br>
+        <h1 class="text-success text-center">Form validation in java script</h1><br>
+        <div class="col-lg-8 m-auto d-block">
+            <form action="#" onsubmit="return validation()" >
+                <div class="form-group">
+                    <label for="#">username : </label>
+                    <input type="text" name="user" class="form-control" id="user" autocomplete="off"  placeholder="username">
+                    <span id="username" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="#">Password : </label>
+                    <input type="password" name="pass" class="form-control" id="pass" autocomplete="off"  placeholder="password">
+                    <span id="Password" class="text-danger font-weight-bold"></span>
+                    <input type="checkbox" onclick="myFunction()">Show Password
+                </div>
+                <div class="form-group">
+                    <label for="#">Confirm Password :</label>
+                    <input type="password" name="cnfPass" class="form-control" id="cnfPass" autocomplete="off " placeholder="confirm password" >
+                    
+
+                    <span id="Confirm-password" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="#">Mobile Number :</label>
+                    <input type="number" name="Mobile" class="form-control" id="Mobile" autocomplete="off"  placeholder="mobile-number">
+                    <span id="mobile-number" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="#">Email :</label>
+                    <input type="text" name="Email" class="form-control" id="Email" autocomplete="off"  placeholder="email">
+                    <span id="emailid" class="text-danger font-weight-bold"></span>
+                </div>
+
+                <input type="submit" name="submut" value="submit" class="btn btn-success">
+            </form>
+        </div>
+
+      </div>
+
+
+      <script>
+          // password check
+ function myFunction() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  
+  }
+// function myFunction() {
+//     var x = document.getElementById("cnfPass");
+//     if (x.type === "password") {
+//       x.type = "text";
+//     } else {
+//       x.type = "password";
+//     }
+//   }
+      </script>
+</body>
+
+</html>
